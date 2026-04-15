@@ -36,6 +36,23 @@ ENV/
 .tmp/
 .gemini/
 
+# CatBoost temp files
+catboost_info/tmp/
+catboost_info/learn/
+catboost_info/
+process/catboost_info/tmp/
+process/catboost_info/learn/
+
+# Model files at root (kept in process/ only)
+/xgb_best_model.joblib
+/cat_best_model.joblib
+
+# Output images
+output.png
+
 # Data (often kept out of git if large)
 # data/
 # insurance_claims_cleaned.csv
+
+# Windows special file created by accident
+nul
